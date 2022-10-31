@@ -1,22 +1,21 @@
-# from companies.models import Company
-# from companies.serializers import CompanySerializer
-# from rest_framework.test import APIClient, APITestCase
+from companies.models import Company
+from companies.serializers import CompanySerializer
+from rest_framework.test import APIClient, APITestCase
 
-# # class BooksSerializersTest(APITestCase):
-# #     fixtures = ["books.json", "users.json"]
 
-# #     def setUp(self):
-# #         self.client = APIClient()
+class CompaniesSerializersTest(APITestCase):
+    fixtures = ["companies.json"]
 
-# #     def test_get_all_books(self):
-# #         books = Book.objects.all()
+    def setUp(self):
+        self.client = APIClient()
 
-# #         serializer = BookSerializer(books, many=True)
+    def test_get_all_companies(self):
+        companies = Company.objects.all()
 
-# #         self.assertEqual(serializer.data[0]["title"], "Moby-Dick")
-# #         self.assertEqual(
-# #             serializer.data[1]["title"], "Architecture Patterns with Python"
-# #         )
-# #         self.assertEqual(
-# #             serializer.data[2]["title"], "The Oxford Handbook of Happiness"
-# #         )
+        serializer = CompanySerializer(companies, many=True)
+
+        self.assertEqual(serializer.data[0]["company_name"], "ABC Computers")
+        self.assertEqual(serializer.data[1]["company_name"], "Capital Partners")
+        self.assertEqual(
+            serializer.data[2]["company_name"], "Royal Institute of Trade Studies"
+        )
