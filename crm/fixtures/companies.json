@@ -1,0 +1,35 @@
+[
+{
+    "model": "companies.company",
+    "pk": 1, 
+    "fields": {
+        "date_created": "2022-10-31T14:44:04.156Z",
+        "company_name": "ABC Computers",
+        "registered_name": "ABC Computers Ltd",
+        "email": "abc.computers@example.com",
+        "company_reference": "00000000"
+    }
+},
+{
+    "model": "companies.company",
+    "pk": 2, 
+    "fields": {
+        "date_created": "2022-10-31T14:44:05.166Z",
+        "company_name": "Capital Partners",
+        "registered_name": "Capital Partners LLP",
+        "email": "capital.partners@example.com",
+        "company_reference": "00000000"
+    }
+},
+{
+    "model": "companies.company",
+    "pk": 3, 
+    "fields": {
+        "date_created": "2022-10-31T14:44:06.176Z",
+        "company_name": "Royal Institute of Trade Studies",
+        "registered_name": "The Royal Institute of Trade Studies",
+        "email": "rits@example.com",
+        "company_reference": "RC000000"
+    }
+}
+]

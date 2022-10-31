@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "crm",
+    "companies",
 ]
 
 MIDDLEWARE = [
@@ -81,6 +81,9 @@ DATABASES = {
         "OPTIONS": {
             "service": "crm_db_conn",
             "passfile": ".my_pgpass",
+        },
+        "TEST": {
+            "NAME": "test_crm_db",
         },
     }
 }
