@@ -29,3 +29,15 @@ from rest_framework.test import APIClient, APITestCase
 
 #         self.assertEqual(response.status_code, status.HTTP_200_OK)
 #         self.assertEqual(response["content-type"], "application/json")
+
+
+class CompaniesViewsTest(APITestCase):
+    fixtures = ["companies.json"]
+
+    def setUp(self):
+        self.client = APIClient()
+
+    def test_get_all_companies(self):
+        response = self.client.get("/companies/")
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
