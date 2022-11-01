@@ -6,7 +6,7 @@ class CompaniesModelsTest(APITestCase):
     fixtures = ["companies.json"]
 
     def setUp(self):
-        client = APIClient()
+        self.client = APIClient()
 
     def test_get_all_companies(self):
         companies = Company.objects.all()
