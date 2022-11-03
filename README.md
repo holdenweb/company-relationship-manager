@@ -25,7 +25,7 @@ cp sample.env .env
 You can add secrets to this file when obtained from the development team.
 
 
-### Getting started using Docker
+### Using Docker
 
 You can run the api and all associated services using `docker-compose`, or use the script `up.sh` like so
 
