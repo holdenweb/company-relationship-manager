@@ -1,18 +1,38 @@
 # company-relationship-manager
-The 'CRM' manages relationships between companies and a UK government department
+
+**This is a sample application to assess developer skills in a python / django environment.**
+
+The 'CRM' manages relationships between companies and a UK government department.
+
+Currently a user can: 
+- create a company by sending a POST request to the `/companies/` endpoint
+- view one company or a view a list of all companies
+- update a company
+- delete a company
+
+It is built using the Django REST framework and a Postgres database running in a Docker container environment.
 
 ## Usage
 
-### Getting started
+### Getting started using Docker
 
-Run the application using
+You can run the api and all associated services using `docker-compose`, or use the script `up.sh` like so
+
 ```
-python manage.py runserver
+./up.sh
+```
+
+To tell `docker-compose` to stop all services, there is a script `down.sh` you can use like so
+
+```
+./down.sh
 ```
 
 ### Tests
 
-Run tests using
+You can run tests using pytest from a running Docker container using the `test.sh` script like so
+
 ```
-pipenv run pytest
+./test.sh
 ```
+
