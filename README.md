@@ -36,3 +36,6 @@ You can run tests using pytest from a running Docker container using the `test.s
 ./test.sh
 ```
 
+## Tasks
+
+To see suggested development tasks, go to [TASKS.md](TASKS.md)
