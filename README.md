@@ -1,6 +1,6 @@
 # company-relationship-manager
 
-**This is a sample application to assess developer skills in a python / django environment.**
+**This is an example application to assess developer skills with python and Django REST framework.**
 
 The 'CRM' manages relationships between companies and a UK government department.
 
