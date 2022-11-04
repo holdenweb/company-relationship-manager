@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "company-relationship-manager"
+version = "0.1.0"
+description = "An example application to assess developer skills with python and Django REST framework"
+authors = ["Henry James"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "company_relationship_manager"}]
+
+[tool.poetry.dependencies]
+python = ["^3.8","^3.9","^3.10"]
+django = "^4.1.3"
+djangorestframework = "^3.14.0"
+psycopg2 = "^2.9.5"
+requests = "^2.28.1"
+python-dotenv = "^0.21.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pytest-django = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
