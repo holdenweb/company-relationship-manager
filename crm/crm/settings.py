@@ -11,10 +11,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,7 +81,7 @@ DATABASES = {
         "HOST": "db",
         "NAME": "crm_db",
         "USER": "crm_db_user",
-        "PASSWORD": os.environ.get("CRM_DB_PASSWORD"),
+        "PASSWORD": 12345,
         "TEST": {
             "NAME": "test_crm_db",
         },

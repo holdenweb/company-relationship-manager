@@ -4,7 +4,7 @@ services:
   db:
     image: "postgres"
     environment:
-      - POSTGRES_PASSWORD=${CRM_DB_PASSWORD}
+      - POSTGRES_PASSWORD=12345
       - POSTGRES_USER=crm_db_user
       - POSTGRES_DB=crm_db
     expose:
@@ -13,8 +13,6 @@ services:
       - 5432:5432
   
   api:
-    env_file:
-      - .env
     build: .
     volumes:
       - .:/app
