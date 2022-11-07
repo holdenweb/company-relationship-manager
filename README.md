@@ -14,17 +14,6 @@ It is built using the Django REST framework and a Postgres database running in a
 
 ## Usage
 
-### Creating the `.env` file
-
-You can create your own `.env` file that by default will not be included in source control by using
-
-```
-cp sample.env .env
-```
-
-You can add secrets to this file when obtained from the development team.
-
-
 ### Using Docker
 
 You can run the api and all associated services using `docker-compose`, or use the script `up.sh` like so
